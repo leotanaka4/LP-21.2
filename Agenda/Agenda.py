@@ -15,14 +15,13 @@ def Buscar():
     busca = input("Busca: ")
     arquivo = open("contatos.txt", "r")
     leitura = arquivo.readlines()
-    linhas = len(leitura)
-    for i in range(linhas):
+    for i in range(len(leitura)):
         resultado = leitura[i].count(busca)
         if (resultado > 0):
             print(leitura[i])
 
 def Remover():
-    apagado = input("Apagado: ")
+    apagado = input("Removido: ")
     arquivo = open("contatos.txt", "r")
     leitura = arquivo.readlines()
     linhas = len(leitura)
@@ -30,6 +29,7 @@ def Remover():
         resultado = leitura[i].count(apagado)
         if (resultado>0):
             leitura.pop(i)
+            print("Contato Removido!")
     arquivo = open("contatos.txt", "w")
     arquivo.writelines(leitura)
 
@@ -37,8 +37,7 @@ def Editar():
     editado = input("Editado: ")
     arquivo = open("contatos.txt", "r")
     leitura = arquivo.readlines()
-    linhas = len(leitura)
-    for i in range(linhas):
+    for i in range(len(leitura)):
         resultado = leitura[i].count(editado)
         if (resultado>0):
             nome = input("Nome: ")
