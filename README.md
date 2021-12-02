@@ -3,4 +3,6 @@ Nome: Leonardo Soares da Costa Tanaka/Listas de Exercícios e Trabalhos
 
 EstruturaSequencial -> Primeira Lista de Exercícios
 
-Agenda -> Não está 100%, porque não entendi muito bem o bug
+Agenda -> Está 100% com bug corrigido
+
+Cifra -> Falta criar receber arquivo e enviar ele cifrado
