@@ -4,10 +4,10 @@ class Macaco:
         self.bucho = bucho
     
     def comer(self, comida):
-        self.comida += comida
+        self.bucho += comida
     
     def verBucho(self):
-        print("A quantidade de comida no bucho: %d"%(self.bucho-self.nome))
+        print("A quantidade de comida no bucho: %d"%(self.bucho))
     
     def digerir(self):
         self.bucho = 0
@@ -25,5 +25,5 @@ chimpanze.comer(jaca)
 gorilla.comer(jaca)
 chimpanze.verBucho()
 gorilla.verBucho()
-gorilla.comer(chimpanze)
-gorilla.verBucho()
+#gorilla.comer(chimpanze)
+#gorilla.verBucho()
