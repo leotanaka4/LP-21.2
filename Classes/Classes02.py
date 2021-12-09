@@ -11,9 +11,3 @@ class Quadrado:
     def calculaArea(self):
         area =  self.lado**2
         return area
-
-a = Quadrado(5)
-print(a.retornaLado())
-novo = float(input(print("Digite o novo lado: ")))
-a.trocaLado(novo)
-print("A nova área: %.2f"%(a.calculaArea()))

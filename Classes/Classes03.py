@@ -27,6 +27,14 @@ class Retangulo:
 
 a = float(input(print("Digite o primeiro lado:")))
 b = float(input(print("Digite o segundo lado:")))
-objeto = Retangulo(a,b)
-print("A área do local: %.2f m²."%(objeto.area))
-print("O perimetro: %.2f m."%(objeto.perimetro))
+objeto = Retangulo(a, b)
+if (objeto.area % 2 == 0):
+    pisos = objeto.area//2 #pisos de 2 m²
+else:
+    pisos = objeto.area//2 + 1
+if (objeto.perimetro % 4 == 0):
+    rodapes = objeto.perimetro//4 #rodapés de 4 m
+else:
+    rodapes = objeto.perimetro//4 + 1
+print("Quantidade de pisos: %d"%(pisos))
+print("Quantidade de rodapés: %d"%(rodapes))

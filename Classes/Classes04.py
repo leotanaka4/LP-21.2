@@ -18,4 +18,3 @@ class Pessoa:
     
     def crescer(self, ganho):
         self.altura += ganho
-

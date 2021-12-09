@@ -9,9 +9,3 @@ class Bola:
     
     def mostraCor(self):
         return self.cor
-    
-a = Bola("Laranja", 30, "Plástico")
-print(a.mostraCor())
-nova = str(input(print("Digite a nova cor: ")))
-a.trocaCor(nova)
-print("Nova cor: "+a.cor)
