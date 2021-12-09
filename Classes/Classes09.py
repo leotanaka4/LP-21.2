@@ -13,7 +13,7 @@ class Retangulo(Ponto):
         self.altura = altura
 
     def encontrarCentro(self):
-        self.centro = Ponto(self.vertice.x + self.largura/2, self.vertica.y + self.altura/2)
+        self.centro = Ponto(self.vertice.x + self.largura/2, self.vertice.y + self.altura/2)
         print("Centro na posição x = %.2f e y = %.2f"%(self.centro.x, self.centro.y))
         return self.centro
 
