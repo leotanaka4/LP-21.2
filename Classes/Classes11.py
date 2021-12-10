@@ -11,7 +11,7 @@ class Carro:
             print("O tanque ficou vazio antes de você chegar ao seu destino!")
     
     def obterGasolina(self):
-        return self.tanque
+        print(self.tanque)
 
     def adicionarGasolina(self, litros):
         self.tanque += litros
